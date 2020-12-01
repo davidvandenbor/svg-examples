@@ -1,0 +1,47 @@
+
+body {
+  padding: 2em;
+}
+
+hr {
+  margin: 80px;
+}
+
+
+/* Examples of columns that scale automatically with CSS grid, no media queries needed! */
+
+.grid-container-cssgrid {
+  display:grid
+}
+
+.grid-container--fill {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+}
+
+.grid-container--fit {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-element {
+  background-color: deepPink;
+  padding: 30px;
+  color: #fff;
+  border: 1px solid #fff;
+  break-inside: avoid;
+}
+
+
+/* Same as above but with CSS columns instead of CSS grid! */
+
+.csscolumns {
+  columns:200px;
+  column-gap:1px
+}
+
+.grid-element {
+  background-color: deepPink;
+  color: #fff;
+  border: 1px solid #fff;
+  break-inside: avoid;
+}
+
